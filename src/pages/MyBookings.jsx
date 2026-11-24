@@ -13,7 +13,8 @@ const MyBookings = () => {
       };
       fetchMyBookings();
     } catch (error) {
-      bookings = [];
+      console.log(error, error?.response);
+      setBookings([]);
     }
   }, []);
   return (
