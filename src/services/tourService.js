@@ -1,4 +1,4 @@
-const API_HOST = "http://localhost:8000/api/v1";
+const API_HOST = import.meta.env.VITE_API_URL;
 
 export const getAllTours = async () => {
   const response = await fetch(`${API_HOST}/tours`);
