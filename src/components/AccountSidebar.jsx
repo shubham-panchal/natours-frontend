@@ -3,7 +3,7 @@ import { Link, useMatch } from "react-router-dom";
 
 const userNavItems = [
   { to: "/account/settings", text: "Settings", icon: "settings" },
-  { to: "/account/bookings", text: "My bookings", icon: "briefcase" },
+  { to: "/my-tours", text: "My bookings", icon: "briefcase" },
   { to: "/account/reviews", text: "My reviews", icon: "star" },
   { to: "/account/billing", text: "Billing", icon: "credit-card" },
 ];

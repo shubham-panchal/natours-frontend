@@ -11,6 +11,7 @@ import MyTours from "./components/MyBookings";
 import MyReviews from "./components/MyReviews";
 import Billing from "./components/Billing";
 import { ToastContainer } from "react-toastify";
+import MyBookings from "./pages/MyBookings";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="billing" element={<Billing />} />
         </Route>
         <Route path="/overview" element={<Overview />} />
+        <Route path="/my-tours" element={<MyBookings />} />
         <Route path="/tour/:slug" element={<TourDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

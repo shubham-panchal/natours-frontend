@@ -21,9 +21,9 @@ const Footer = () => {
           <a href="#">Contact</a>
         </li>
       </ul>
-      <p className="footer__copyright">
+      {/* <p className="footer__copyright">
         &copy; by Jonas Schmedtmann. All rights reserved.
-      </p>
+      </p> */}
     </footer>
   );
 };
