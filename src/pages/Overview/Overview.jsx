@@ -1,17 +1,21 @@
 import { useEffect, useState } from "react";
 import TourCard from "../../components/TourCard/TourCard";
+import Loader from "../../components/Loader/Loader";
 import { getAllTours } from "../../services/tourService";
 
 const Overview = () => {
   const [tours, setTours] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
-    // Fetch all tours from the API
     const fetchTours = async () => {
       try {
         const data = await getAllTours();
         setTours(data?.data?.data || []);
       } catch (error) {
         console.error("Error fetching tours:", error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -19,12 +23,16 @@ const Overview = () => {
   }, []);
 
   return (
-    <main className="main">
-      <div className="card-container">
-        {tours?.map((tour) => (
-          <TourCard key={tour._id} tour={tour} />
-        ))}
-      </div>
+    <main className="main" aria-busy={isLoading}>
+      {isLoading ? (
+        <Loader message="Loading tours..." />
+      ) : (
+        <div className="card-container">
+          {tours.map((tour) => (
+            <TourCard key={tour._id} tour={tour} />
+          ))}
+        </div>
+      )}
     </main>
   );
 };

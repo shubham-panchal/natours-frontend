@@ -3,6 +3,7 @@
 @import "../../components/Footer/Footer.css";
 @import "./tour-list.css";
 @import "../../components/TourCard/TourCard.css";
+@import "../../components/Loader/Loader.css";
 @import "../../pages/TourDetails/TourDetails.css";
 @import "../../components/About/About.css";
 @import "./tour-overview.css";
