@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { updateMyPassword } from "../services/userService";
+import { updateMyPassword } from "../../services/userService";
 
 const initialState = {
   passwordCurrent: "",

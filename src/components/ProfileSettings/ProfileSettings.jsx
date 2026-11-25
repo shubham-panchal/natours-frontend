@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useAuth } from "../context/AuthContext";
-import { updateProfile } from "../services/userService";
+import { useAuth } from "../../context/AuthContext";
+import { updateProfile } from "../../services/userService";
 import { toast } from "react-toastify";
 
 const ProfileSettings = () => {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import TourCard from "../components/TourCard";
-import { getAllTours } from "../services/tourService";
+import TourCard from "../../components/TourCard/TourCard";
+import { getAllTours } from "../../services/tourService";
 
 const Overview = () => {
   const [tours, setTours] = useState([]);

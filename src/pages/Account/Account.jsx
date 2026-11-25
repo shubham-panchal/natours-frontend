@@ -1,6 +1,6 @@
-import { useAuth } from "../context/AuthContext";
-import PasswordChange from "../components/PasswordChange";
-import AccountSidebar from "../components/AccountSidebar";
+import { useAuth } from "../../context/AuthContext";
+import PasswordChange from "../../components/PasswordChange/PasswordChange";
+import AccountSidebar from "../../components/AccountSidebar/AccountSidebar";
 import { Outlet } from "react-router-dom";
 
 const Account = () => {

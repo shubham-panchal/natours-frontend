@@ -1,17 +1,17 @@
 import { Routes, Route, Link } from "react-router-dom";
-import NotFound from "./pages/NotFound";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Login from "./pages/Login";
-import Account from "./pages/Account";
-import Overview from "./pages/Overview";
-import TourDetails from "./pages/TourDetails";
-import ProfileSettings from "./components/ProfileSettings";
-import MyTours from "./components/MyBookings";
-import MyReviews from "./components/MyReviews";
-import Billing from "./components/Billing";
+import NotFound from "./pages/NotFound/NotFound";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Login from "./pages/Login/Login";
+import Account from "./pages/Account/Account";
+import Overview from "./pages/Overview/Overview";
+import TourDetails from "./pages/TourDetails/TourDetails";
+import ProfileSettings from "./components/ProfileSettings/ProfileSettings";
+import MyTours from "./components/MyBookings/MyBookings";
+import MyReviews from "./components/MyReviews/MyReviews";
+import Billing from "./components/Billing/Billing";
 import { ToastContainer } from "react-toastify";
-import MyBookings from "./pages/MyBookings";
+import MyBookings from "./pages/MyBookings/MyBookings";
 
 function App() {
   return (

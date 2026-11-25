@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { getMyBookings } from "../services/bookingService";
-import TourCard from "../components/TourCard";
+import { getMyBookings } from "../../services/bookingService";
+import TourCard from "../../components/TourCard/TourCard";
 
 const MyBookings = () => {
   const [bookings, setBookings] = useState([]);

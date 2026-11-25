@@ -1,0 +1,15 @@
+.description-box .description {
+  margin-right: 5rem;
+}
+.description-box .description__text {
+  font-size: 1.7rem;
+}
+.description-box .description__text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .description-box .description {
+    margin-right: 0;
+  }
+}

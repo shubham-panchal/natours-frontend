@@ -1,0 +1,16 @@
+@import "./base.css";
+@import "../../components/Header/Header.css";
+@import "../../components/Footer/Footer.css";
+@import "./tour-list.css";
+@import "../../components/TourCard/TourCard.css";
+@import "../../pages/TourDetails/TourDetails.css";
+@import "../../components/About/About.css";
+@import "./tour-overview.css";
+@import "../../components/Pictures/Pictures.css";
+@import "../../components/Map/Map.css";
+@import "../../components/Reviews/Reviews.css";
+@import "../../components/BookNow/BookNow.css";
+@import "../../pages/Account/Account.css";
+@import "../../components/AccountSidebar/AccountSidebar.css";
+@import "../../pages/NotFound/NotFound.css";
+@import "./forms.css";

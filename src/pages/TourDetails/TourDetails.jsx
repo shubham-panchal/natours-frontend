@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import { getTour } from "../services/tourService";
-import Reviews from "../components/Reviews";
-import QuickFacts from "../components/QuickFacts";
-import Guides from "../components/Guides";
-import About from "../components/About";
-import Pictures from "../components/Pictures";
-import BookNow from "../components/BookNow";
-import Map from "../components/Map";
+import { getTour } from "../../services/tourService";
+import Reviews from "../../components/Reviews/Reviews";
+import QuickFacts from "../../components/QuickFacts/QuickFacts";
+import Guides from "../../components/Guides/Guides";
+import About from "../../components/About/About";
+import Pictures from "../../components/Pictures/Pictures";
+import BookNow from "../../components/BookNow/BookNow";
+import Map from "../../components/Map/Map";
 
 const TourDetails = () => {
   const { slug } = useParams();
